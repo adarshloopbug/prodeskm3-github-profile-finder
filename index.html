@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>GitHub Profile Finder</h1>
+
+    <button id="toggleBtn">Switch to Battle Mode</button>
+
+    <div id="normalMode">
+
+        <div class="searchBox">
+            <input type="text" id="username" placeholder="Enter GitHub username">
+            <button id="searchBtn">Search</button>
+        </div>
+
+    </div>
+
+    <div id="battleMode" class="hidden">
+
+        <div class="battleInputs">
+            <input type="text" id="user1" placeholder="First username">
+            <input type="text" id="user2" placeholder="Second username">
+            <button id="battleBtn">Battle</button>
+        </div>
+
+    </div>
+
+    <div id="loading" class="hidden">
+        Loading...
+    </div>
+
+    <div id="error" class="hidden">
+        User Not Found
+    </div>
+
+    <div id="profileCard" class="profile hidden"></div>
+
+    <div id="repoSection" class="hidden">
+        <h2>Latest Repositories</h2>
+        <ul id="repoList"></ul>
+    </div>
+
+    <div id="battleResult"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
